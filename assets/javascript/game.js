@@ -6,7 +6,7 @@ var words = ["pink", "hotpink", "mediumvioletred","salmon","red","firebrick",
 	"indigo","maroon","slategray"];
 var wins = 0;
 var guesses = 10;
-var wordIndex = Math.floor(Math.random() * 17);
+var wordIndex = 11;//Math.floor(Math.random() * 17);
 var correct = 0;
 var guessed = [];
 var flag = 0;
@@ -69,6 +69,8 @@ document.onkeydown = function(event) {
 	if(correct==words[wordIndex].length){
 		wins++;
 		document.querySelector("#wins").innerHTML = "Wins: " + wins;
+		document.body.style.backgroundColor=word;
+
 
 	}
 
